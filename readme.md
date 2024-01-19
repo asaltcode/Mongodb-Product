@@ -14,7 +14,7 @@
 
 4. List the four product which are grater than 500 in price.
     * Solution :
-      <pre> db.Product.find({product_price:{$not:{$gt: 400, $lt: 600}}})</pre>
+      <pre>db.Product.find({product_price:{$gt: 500}}).limit(4)</pre>
 
 5. Find the product name and product material of each products.
     * Solution :
